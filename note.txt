@@ -1,0 +1,20 @@
+ -npm install : tạo lại thư mục  node_modules
+ -npm start : khởi chạy project 
+
+
+Phân tích website
+
+header.html
+carousel.html 
+box-search.html 
+            select-option.html
+            select-option.html
+            select-option.html
+            select-option.html
+            select-option.html
+footer.html 
+
+
+ ========= Buổi 1 ===========
+
+ -compoen
