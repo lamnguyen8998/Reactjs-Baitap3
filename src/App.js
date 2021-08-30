@@ -10,7 +10,9 @@ import ExampleCar from './example-car'
 import Listskeys from './lists-keys';
 import ListsFilms from './baitap4';
 import Communication from './communication';
-import LiftingStateUpCart from './shopping-cart';
+import LiftingStateUpCart from './shopping-cart'
+import Home from './user-management'
+
 
 
 function App() {
@@ -36,7 +38,11 @@ function App() {
       <Communication />
 
       <hr/>
-      <LiftingStateUpCart /> 
+      <LiftingStateUpCart />
+
+      <hr/>
+      <Home />
+      
     </div>
   );
 }
