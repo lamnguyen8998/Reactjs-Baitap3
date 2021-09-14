@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import {connect} from "react-redux";
+import {actUserDelete, actGetUserEdit} from "./../redux/actions"
+
 
 class UserItem extends Component {
   render() {
@@ -15,6 +18,9 @@ class UserItem extends Component {
             className="btn btn-info mr-2"
             data-toggle="modal"
             data-target="#modelIdUser"
+            onClick={() => {
+              this.props.getUserEdit(user);
+            }}
           >
             Edit
           </button>
@@ -32,4 +38,18 @@ class UserItem extends Component {
   }
 }
 
-export default UserItem;
+const mapDispatchToProps = (dispatch) =>{
+  return {
+    getUserDelete: (user)=>{
+      dispatch(actUserDelete(user));
+    },
+    getUserEdit: (user) =>{
+      dispatch(actGetUserEdit(user));
+
+    },
+  };
+
+
+}
+
+export default connect(null, mapDispatchToProps ) (UserItem);

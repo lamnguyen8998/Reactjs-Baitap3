@@ -19,7 +19,7 @@ export default class LiftingStateUpCart extends Component {
       detailProduct: product,
     });
   };
-
+  
   _findIndex = (maSP) => {
     return this.state.listCart.findIndex((item) => item.maSP === maSP);
   };
@@ -53,7 +53,7 @@ export default class LiftingStateUpCart extends Component {
     //Cập nhật lại state để component render lại
     this.setState({
       listCart,
-    });
+    })
   };
 
   handleDelete = (product) => {
