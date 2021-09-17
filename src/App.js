@@ -15,7 +15,8 @@ import "./App.css";
 // import HomeRedux from './user-management-redux'
 // import Lifecycle from "./lifecycle";
 // import OanTuXi from "./BaiTapRedux/BaiTapOanTuXi";
-import FormValidation from "./form-validation";
+// import FormValidation from "./form-validation";
+import BaiTapBookingTicket from "./BaiTapRedux/BaiTapBookingTicket/BaiTapBookingTicket";
 
 function App() {
   return (
@@ -44,8 +45,9 @@ function App() {
 
       {/* <HomeRedux /> */}
       {/* <Lifecycle /> */}
-      {/* <OanTuXi /> */}
-      <FormValidation />
+      {/* <OanTuXi />
+      <FormValidation /> */}
+      <BaiTapBookingTicket />
     </div>
   );
 }
